@@ -85,7 +85,7 @@ class AccountController extends Controller
             ]);
         }
 
-        return redirect()->route('user.index.account')->with('success', trans('Profile Updated Successfully!'));
+        return redirect()->route('user.index.account')->with('success', trans('Profil Berhasil Diperbaharui!'));
     }
 
     // Change password
@@ -115,9 +115,9 @@ class AccountController extends Controller
             ]);
 
             // Page redirect 
-            return redirect()->route('user.index.account')->with('success', trans('Profile Password Changed Successfully!'));
+            return redirect()->route('user.index.account')->with('success', trans('Password Profil Berhasil Diganti!'));
         } else {
-            return redirect()->route('user.index.account')->with('failed', trans('Confirm Password Mismatched.'));
+            return redirect()->route('user.index.account')->with('failed', trans('Konfirmasi Kata Sandi Tidak Cocok.'));
         }
     }
 
