@@ -85,7 +85,7 @@ class AiSpeechToTextController extends Controller
                 }
             } else {
                 // Redirect
-                return redirect()->route('user.all.ai.speech.to.text')->with('failed', trans('Maximum speech to text limit is exceeded, Please upgrade your plan.'));
+                return redirect()->route('user.all.ai.speech.to.text')->with('failed', trans('Batas maksimum speech to text telah terlampaui, Segera upgrade paketmu.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -152,7 +152,7 @@ class AiSpeechToTextController extends Controller
         if (isset($content)) {
             return view('user.pages.ai-speech.view', compact('content'));
         } else {
-            return redirect()->route('user.all.ai.speech.to.text')->with('failed', trans('Wrong content ID.'));
+            return redirect()->route('user.all.ai.speech.to.text')->with('failed', trans('ID Konten Salah.'));
         }
     }
 
@@ -167,7 +167,7 @@ class AiSpeechToTextController extends Controller
         if (isset($content)) {
             return view('user.pages.ai-speech.edit', compact('content', 'config'));
         } else {
-            return redirect()->route('user.all.ai.speech.to.text')->with('failed', trans('Wrong content ID.'));
+            return redirect()->route('user.all.ai.speech.to.text')->with('failed', trans('ID Konten Salah.'));
         }
     }
 
@@ -179,7 +179,7 @@ class AiSpeechToTextController extends Controller
             'content' => $request->result
         ]);
 
-        return redirect()->route('user.edit.ai.speech.to.text', $request->generateId)->with('success', trans('Updated!'));
+        return redirect()->route('user.edit.ai.speech.to.text', $request->generateId)->with('success', trans('Diperbaharui!'));
     }
 
     // Export docs

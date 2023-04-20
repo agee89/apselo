@@ -75,7 +75,7 @@ class AIContentCreatorController extends Controller
                 return view('user.pages.ai-content.pages.index', compact('active_plan'));
             } else {
                 // Redirect
-                return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -110,10 +110,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.blog-outline', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -148,10 +148,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.blog-heading', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -186,10 +186,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.blog-description', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -224,10 +224,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.blog-story-ideas', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -262,10 +262,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.content', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -300,10 +300,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.paragraph', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -338,10 +338,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.summarization', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -376,10 +376,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.product-name', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -414,10 +414,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.product-description', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -452,10 +452,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.startup-name', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -490,10 +490,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.product-review', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -528,10 +528,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.service-review', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -566,10 +566,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.youtube-title', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -604,10 +604,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.youtube-tags', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -642,10 +642,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.youtube-outline', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -680,10 +680,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.youtube-intro', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -718,10 +718,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.youtube-ideas', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -756,10 +756,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.youtube-description', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -794,10 +794,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.youtube-shorts', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -832,10 +832,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.write-me', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -870,10 +870,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.welcome-email', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -908,10 +908,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.website-meta-description', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -946,10 +946,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.website-meta-keywords', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -984,10 +984,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.website-meta-title', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -1022,10 +1022,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.event-promotion-email', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -1060,10 +1060,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.twitter-writer', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -1098,10 +1098,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.aida-framework', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -1136,10 +1136,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.presentation', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -1174,10 +1174,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.ask-question', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -1212,10 +1212,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.landing-page', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -1250,10 +1250,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.google-ads', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -1288,10 +1288,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.custom-prompt', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -1326,10 +1326,10 @@ class AIContentCreatorController extends Controller
                     return view('user.pages.ai-content.pages.generate-by-website-url', compact('config'));
                 } else {
                     // Redirect
-                    return redirect()->route('user.all.ai.content')->with('failed', trans('Maximum words limit is exceeded, Please upgrade your plan.'));
+                    return redirect()->route('user.all.ai.content')->with('failed', trans('Batas maksimum kata telah terlampaui, Segera Upgrade Paketmu.'));
                 }
             } else {
-                return redirect()->route('user.all.ai.content')->with('failed', trans('This is a premium tool. If you want to access this tool, you need a premium plan.'));
+                return redirect()->route('user.all.ai.content')->with('failed', trans('Ini adalah tool premium. Jika kamu ingin mengakses tool ini, kamu membutuhkan paket premium.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -1411,7 +1411,7 @@ class AIContentCreatorController extends Controller
         if (isset($content)) {
             return view('user.pages.ai-content.view', compact('content'));
         } else {
-            return redirect()->route('user.all.ai.content')->with('failed', trans('Wrong content ID.'));
+            return redirect()->route('user.all.ai.content')->with('failed', trans('ID Konten Salah.'));
         }
     }
 
@@ -1426,7 +1426,7 @@ class AIContentCreatorController extends Controller
         if (isset($content)) {
             return view('user.pages.ai-content.edit', compact('content', 'config'));
         } else {
-            return redirect()->route('user.all.ai.content')->with('failed', trans('Wrong content ID.'));
+            return redirect()->route('user.all.ai.content')->with('failed', trans('ID Konten Salah.'));
         }
     }
 
@@ -1438,7 +1438,7 @@ class AIContentCreatorController extends Controller
             'content' => $request->result
         ]);
 
-        return redirect()->route('user.edit.ai.content', $request->generateId)->with('success', trans('Updated!'));
+        return redirect()->route('user.edit.ai.content', $request->generateId)->with('success', trans('Diperbaharui!'));
     }
 
     // Delete generate content
@@ -1453,9 +1453,9 @@ class AIContentCreatorController extends Controller
                 'status' => 0
             ]);
 
-            return redirect()->route('user.all.ai.content')->with('success', trans('Deleted!'));
+            return redirect()->route('user.all.ai.content')->with('success', trans('Dihapus!'));
         } else {
-            return redirect()->route('user.all.ai.content')->with('failed', trans('Wrong content ID.'));
+            return redirect()->route('user.all.ai.content')->with('failed', trans('ID Konten Salah.'));
         }
     }
 

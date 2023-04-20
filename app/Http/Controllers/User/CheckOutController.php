@@ -27,7 +27,7 @@ class CheckOutController extends Controller
 
         // Check selected plan status
         if ($selected_plan == null) {
-            return redirect()->route('user.plans')->with('failed', trans('Your current plan is not available. Choose another plan.'));
+            return redirect()->route('user.plans')->with('failed', trans('Paketmu sedang tidak tersedia. Silakan pilih paket yang lain.'));
         } else {
 
             // Queries
@@ -105,7 +105,7 @@ class CheckOutController extends Controller
                                 'api_key' => "",
                             ]);
 
-                            return redirect()->route('user.plans')->with('success', trans("FREE Plan activated!"));
+                            return redirect()->route('user.plans')->with('success', trans("Paket GRATIS Telah Diaktifkan!"));
                         }
                     } else {
                         // Queries
@@ -125,7 +125,7 @@ class CheckOutController extends Controller
                     }
                 } else {
                     // Redirect
-                    return redirect()->route('user.plans')->with('failed', trans('You cannot choose this plan as the words / images count of the plan you have chosen is less than the count of the documents / images you have already stored. So, please choose a different plan.'));
+                    return redirect()->route('user.plans')->with('failed', trans('Kamu tidak dapat memilih paket ini karena jumlah kata / gambar dari paket yang kamu pilih kurang dari jumlah dokumen / gambar yang telah tersimpan. Silakan pilih paket yang berbeda.'));
                 }
             }
         }

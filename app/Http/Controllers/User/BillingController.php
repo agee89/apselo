@@ -121,6 +121,6 @@ class BillingController extends Controller
             'plan_activation_date' => now(),
             'plan_details' => $selected_plan,
         ]);
-        return redirect()->route('user.plans')->with('success', trans("FREE Plan activated!"));
+        return redirect()->route('user.plans')->with('success', trans("Paket GRATIS Telah Aktif!"));
     }
 }

@@ -85,7 +85,7 @@ class AiImageCreatorController extends Controller
                 }
             } else {
                 // Redirect
-                return redirect()->route('user.all.ai.images')->with('failed', trans('Maximum image limit is exceeded, Please upgrade your plan.'));
+                return redirect()->route('user.all.ai.images')->with('failed', trans('Batas maksimum gambar telah terlampaui, Segera upgrade paketmu.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -149,7 +149,7 @@ class AiImageCreatorController extends Controller
         if (isset($images)) {
             return view('user.pages.ai-images.view', compact('images'));
         } else {
-            return redirect()->route('user.all.ai.images')->with('failed', trans('Wrong image ID.'));
+            return redirect()->route('user.all.ai.images')->with('failed', trans('ID Gambar Salah.'));
         }
     }
 
@@ -166,9 +166,9 @@ class AiImageCreatorController extends Controller
                 'status' => 0
             ]);
 
-            return redirect()->route('user.all.ai.images')->with('success', trans('Deleted!'));
+            return redirect()->route('user.all.ai.images')->with('success', trans('Dihapus!'));
         } else {
-            return redirect()->route('user.all.ai.images')->with('failed', trans('Wrong image ID.'));
+            return redirect()->route('user.all.ai.images')->with('failed', trans('ID Gambar Salah.'));
         }
     }
 }

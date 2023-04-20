@@ -30,10 +30,10 @@ class VerificationController extends Controller
         try {            
             $user->newEmail($user->email);
         } catch (\Throwable $th) {
-            return redirect()->route('user.dashboard')->with('failed', trans('Email service not available.'));
+            return redirect()->route('user.dashboard')->with('failed', trans('Layanan email tidak tersedia.'));
         }
 
         // Page redirect 
-        return redirect()->route('user.dashboard')->with('success', trans('Mail Sent.'));
+        return redirect()->route('user.dashboard')->with('success', trans('Email dkirim.'));
     }
 }
