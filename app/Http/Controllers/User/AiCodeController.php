@@ -86,7 +86,7 @@ class AiCodeController extends Controller
                 }
             } else {
                 // Redirect
-                return redirect()->route('user.all.ai.code.to.text')->with('failed', trans('Maximum code limit is exceeded, Please upgrade your plan.'));
+                return redirect()->route('user.all.ai.code.to.text')->with('failed', trans('Maksimal Pemakaian Kode Telah Mencapai Batas, Segera Upgrade Paketmu.'));
             }
         } else {
             // Page redirect in plan is not activated
@@ -150,7 +150,7 @@ class AiCodeController extends Controller
         if (isset($content)) {
             return view('user.pages.ai-code.view', compact('content'));
         } else {
-            return redirect()->route('user.all.ai.code')->with('failed', trans('Wrong content ID.'));
+            return redirect()->route('user.all.ai.code')->with('failed', trans('ID Konten Salah.'));
         }
     }
 
@@ -165,7 +165,7 @@ class AiCodeController extends Controller
         if (isset($content)) {
             return view('user.pages.ai-code.edit', compact('content', 'config'));
         } else {
-            return redirect()->route('user.all.ai.code')->with('failed', trans('Wrong content ID.'));
+            return redirect()->route('user.all.ai.code')->with('failed', trans('ID Konten Salah.'));
         }
     }
 
@@ -177,7 +177,7 @@ class AiCodeController extends Controller
             'content' => $request->result
         ]);
 
-        return redirect()->route('user.edit.ai.code', $request->generateId)->with('success', trans('Updated!'));
+        return redirect()->route('user.edit.ai.code', $request->generateId)->with('success', trans('Diperbaharui!'));
     }
 
     // Export docs
