@@ -1,0 +1,813 @@
+/*!
+* Tabler v1.0.0-beta2 (https://tabler.io)
+* @version 1.0.0-beta2
+* @link https://tabler.io
+* Copyright 2018-2021 The Tabler Authors
+* Copyright 2018-2021 codecalm.net Paweł Kuna
+* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
+*/
+.flag {
+    position: relative;
+    display: inline-block;
+    width: 1.33333em;
+    height: 1em;
+    vertical-align: -3px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #e6e8e9;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.flag-country-ad {
+    background-image: url(../images/icons/countries/ad.svg);
+}
+.flag-country-ae {
+    background-image: url(../images/icons/countries/ae.svg);
+}
+.flag-country-af {
+    background-image: url(../images/icons/countries/af.svg);
+}
+.flag-country-ag {
+    background-image: url(../images/icons/countries/ag.svg);
+}
+.flag-country-ai {
+    background-image: url(../images/icons/countries/ai.svg);
+}
+.flag-country-al {
+    background-image: url(../images/icons/countries/al.svg);
+}
+.flag-country-am {
+    background-image: url(../images/icons/countries/am.svg);
+}
+.flag-country-ao {
+    background-image: url(../images/icons/countries/ao.svg);
+}
+.flag-country-aq {
+    background-image: url(../images/icons/countries/aq.svg);
+}
+.flag-country-ar {
+    background-image: url(../images/icons/countries/ar.svg);
+}
+.flag-country-as {
+    background-image: url(../images/icons/countries/as.svg);
+}
+.flag-country-at {
+    background-image: url(../images/icons/countries/at.svg);
+}
+.flag-country-au {
+    background-image: url(../images/icons/countries/au.svg);
+}
+.flag-country-aw {
+    background-image: url(../images/icons/countries/aw.svg);
+}
+.flag-country-ax {
+    background-image: url(../images/icons/countries/ax.svg);
+}
+.flag-country-az {
+    background-image: url(../images/icons/countries/az.svg);
+}
+.flag-country-ba {
+    background-image: url(../images/icons/countries/ba.svg);
+}
+.flag-country-bb {
+    background-image: url(../images/icons/countries/bb.svg);
+}
+.flag-country-bd {
+    background-image: url(../images/icons/countries/bd.svg);
+}
+.flag-country-be {
+    background-image: url(../images/icons/countries/be.svg);
+}
+.flag-country-bf {
+    background-image: url(../images/icons/countries/bf.svg);
+}
+.flag-country-bg {
+    background-image: url(../images/icons/countries/bg.svg);
+}
+.flag-country-bh {
+    background-image: url(../images/icons/countries/bh.svg);
+}
+.flag-country-bi {
+    background-image: url(../images/icons/countries/bi.svg);
+}
+.flag-country-bj {
+    background-image: url(../images/icons/countries/bj.svg);
+}
+.flag-country-bl {
+    background-image: url(../images/icons/countries/bl.svg);
+}
+.flag-country-bm {
+    background-image: url(../images/icons/countries/bm.svg);
+}
+.flag-country-bn {
+    background-image: url(../images/icons/countries/bn.svg);
+}
+.flag-country-bo {
+    background-image: url(../images/icons/countries/bo.svg);
+}
+.flag-country-bq {
+    background-image: url(../images/icons/countries/bq.svg);
+}
+.flag-country-br {
+    background-image: url(../images/icons/countries/br.svg);
+}
+.flag-country-bs {
+    background-image: url(../images/icons/countries/bs.svg);
+}
+.flag-country-bt {
+    background-image: url(../images/icons/countries/bt.svg);
+}
+.flag-country-bv {
+    background-image: url(../images/icons/countries/bv.svg);
+}
+.flag-country-bw {
+    background-image: url(../images/icons/countries/bw.svg);
+}
+.flag-country-by {
+    background-image: url(../images/icons/countries/by.svg);
+}
+.flag-country-bz {
+    background-image: url(../images/icons/countries/bz.svg);
+}
+.flag-country-ca {
+    background-image: url(../images/icons/countries/ca.svg);
+}
+.flag-country-cc {
+    background-image: url(../images/icons/countries/cc.svg);
+}
+.flag-country-cd {
+    background-image: url(../images/icons/countries/cd.svg);
+}
+.flag-country-cf {
+    background-image: url(../images/icons/countries/cf.svg);
+}
+.flag-country-cg {
+    background-image: url(../images/icons/countries/cg.svg);
+}
+.flag-country-ch {
+    background-image: url(../images/icons/countries/ch.svg);
+}
+.flag-country-ci {
+    background-image: url(../images/icons/countries/ci.svg);
+}
+.flag-country-ck {
+    background-image: url(../images/icons/countries/ck.svg);
+}
+.flag-country-cl {
+    background-image: url(../images/icons/countries/cl.svg);
+}
+.flag-country-cm {
+    background-image: url(../images/icons/countries/cm.svg);
+}
+.flag-country-cn {
+    background-image: url(../images/icons/countries/cn.svg);
+}
+.flag-country-co {
+    background-image: url(../images/icons/countries/co.svg);
+}
+.flag-country-cr {
+    background-image: url(../images/icons/countries/cr.svg);
+}
+.flag-country-cu {
+    background-image: url(../images/icons/countries/cu.svg);
+}
+.flag-country-cv {
+    background-image: url(../images/icons/countries/cv.svg);
+}
+.flag-country-cw {
+    background-image: url(../images/icons/countries/cw.svg);
+}
+.flag-country-cx {
+    background-image: url(../images/icons/countries/cx.svg);
+}
+.flag-country-cy {
+    background-image: url(../images/icons/countries/cy.svg);
+}
+.flag-country-cz {
+    background-image: url(../images/icons/countries/cz.svg);
+}
+.flag-country-de {
+    background-image: url(../images/icons/countries/de.svg);
+}
+.flag-country-dj {
+    background-image: url(../images/icons/countries/dj.svg);
+}
+.flag-country-dk {
+    background-image: url(../images/icons/countries/dk.svg);
+}
+.flag-country-dm {
+    background-image: url(../images/icons/countries/dm.svg);
+}
+.flag-country-do {
+    background-image: url(../images/icons/countries/do.svg);
+}
+.flag-country-dz {
+    background-image: url(../images/icons/countries/dz.svg);
+}
+.flag-country-ec {
+    background-image: url(../images/icons/countries/ec.svg);
+}
+.flag-country-ee {
+    background-image: url(../images/icons/countries/ee.svg);
+}
+.flag-country-eg {
+    background-image: url(../images/icons/countries/eg.svg);
+}
+.flag-country-eh {
+    background-image: url(../images/icons/countries/eh.svg);
+}
+.flag-country-er {
+    background-image: url(../images/icons/countries/er.svg);
+}
+.flag-country-es {
+    background-image: url(../images/icons/countries/es.svg);
+}
+.flag-country-et {
+    background-image: url(../images/icons/countries/et.svg);
+}
+.flag-country-fi {
+    background-image: url(../images/icons/countries/fi.svg);
+}
+.flag-country-fj {
+    background-image: url(../images/icons/countries/fj.svg);
+}
+.flag-country-fk {
+    background-image: url(../images/icons/countries/fk.svg);
+}
+.flag-country-fm {
+    background-image: url(../images/icons/countries/fm.svg);
+}
+.flag-country-fo {
+    background-image: url(../images/icons/countries/fo.svg);
+}
+.flag-country-fr {
+    background-image: url(../images/icons/countries/fr.svg);
+}
+.flag-country-ga {
+    background-image: url(../images/icons/countries/ga.svg);
+}
+.flag-country-gb {
+    background-image: url(../images/icons/countries/gb.svg);
+}
+.flag-country-gd {
+    background-image: url(../images/icons/countries/gd.svg);
+}
+.flag-country-ge {
+    background-image: url(../images/icons/countries/ge.svg);
+}
+.flag-country-gf {
+    background-image: url(../images/icons/countries/gf.svg);
+}
+.flag-country-gg {
+    background-image: url(../images/icons/countries/gg.svg);
+}
+.flag-country-gh {
+    background-image: url(../images/icons/countries/gh.svg);
+}
+.flag-country-gi {
+    background-image: url(../images/icons/countries/gi.svg);
+}
+.flag-country-gl {
+    background-image: url(../images/icons/countries/gl.svg);
+}
+.flag-country-gm {
+    background-image: url(../images/icons/countries/gm.svg);
+}
+.flag-country-gn {
+    background-image: url(../images/icons/countries/gn.svg);
+}
+.flag-country-gp {
+    background-image: url(../images/icons/countries/gp.svg);
+}
+.flag-country-gq {
+    background-image: url(../images/icons/countries/gq.svg);
+}
+.flag-country-gr {
+    background-image: url(../images/icons/countries/gr.svg);
+}
+.flag-country-gs {
+    background-image: url(../images/icons/countries/gs.svg);
+}
+.flag-country-gt {
+    background-image: url(../images/icons/countries/gt.svg);
+}
+.flag-country-gu {
+    background-image: url(../images/icons/countries/gu.svg);
+}
+.flag-country-gw {
+    background-image: url(../images/icons/countries/gw.svg);
+}
+.flag-country-gy {
+    background-image: url(../images/icons/countries/gy.svg);
+}
+.flag-country-hk {
+    background-image: url(../images/icons/countries/hk.svg);
+}
+.flag-country-hm {
+    background-image: url(../images/icons/countries/hm.svg);
+}
+.flag-country-hn {
+    background-image: url(../images/icons/countries/hn.svg);
+}
+.flag-country-hr {
+    background-image: url(../images/icons/countries/hr.svg);
+}
+.flag-country-ht {
+    background-image: url(../images/icons/countries/ht.svg);
+}
+.flag-country-hu {
+    background-image: url(../images/icons/countries/hu.svg);
+}
+.flag-country-id {
+    background-image: url(../images/icons/countries/id.svg);
+}
+.flag-country-ie {
+    background-image: url(../images/icons/countries/ie.svg);
+}
+.flag-country-il {
+    background-image: url(../images/icons/countries/il.svg);
+}
+.flag-country-im {
+    background-image: url(../images/icons/countries/im.svg);
+}
+.flag-country-in {
+    background-image: url(../images/icons/countries/in.svg);
+}
+.flag-country-io {
+    background-image: url(../images/icons/countries/io.svg);
+}
+.flag-country-iq {
+    background-image: url(../images/icons/countries/iq.svg);
+}
+.flag-country-ir {
+    background-image: url(../images/icons/countries/ir.svg);
+}
+.flag-country-is {
+    background-image: url(../images/icons/countries/is.svg);
+}
+.flag-country-it {
+    background-image: url(../images/icons/countries/it.svg);
+}
+.flag-country-je {
+    background-image: url(../images/icons/countries/je.svg);
+}
+.flag-country-jm {
+    background-image: url(../images/icons/countries/jm.svg);
+}
+.flag-country-jo {
+    background-image: url(../images/icons/countries/jo.svg);
+}
+.flag-country-jp {
+    background-image: url(../images/icons/countries/jp.svg);
+}
+.flag-country-ke {
+    background-image: url(../images/icons/countries/ke.svg);
+}
+.flag-country-kg {
+    background-image: url(../images/icons/countries/kg.svg);
+}
+.flag-country-kh {
+    background-image: url(../images/icons/countries/kh.svg);
+}
+.flag-country-ki {
+    background-image: url(../images/icons/countries/ki.svg);
+}
+.flag-country-km {
+    background-image: url(../images/icons/countries/km.svg);
+}
+.flag-country-kn {
+    background-image: url(../images/icons/countries/kn.svg);
+}
+.flag-country-kp {
+    background-image: url(../images/icons/countries/kp.svg);
+}
+.flag-country-kr {
+    background-image: url(../images/icons/countries/kr.svg);
+}
+.flag-country-kw {
+    background-image: url(../images/icons/countries/kw.svg);
+}
+.flag-country-ky {
+    background-image: url(../images/icons/countries/ky.svg);
+}
+.flag-country-kz {
+    background-image: url(../images/icons/countries/kz.svg);
+}
+.flag-country-la {
+    background-image: url(../images/icons/countries/la.svg);
+}
+.flag-country-lb {
+    background-image: url(../images/icons/countries/lb.svg);
+}
+.flag-country-lc {
+    background-image: url(../images/icons/countries/lc.svg);
+}
+.flag-country-li {
+    background-image: url(../images/icons/countries/li.svg);
+}
+.flag-country-lk {
+    background-image: url(../images/icons/countries/lk.svg);
+}
+.flag-country-lr {
+    background-image: url(../images/icons/countries/lr.svg);
+}
+.flag-country-ls {
+    background-image: url(../images/icons/countries/ls.svg);
+}
+.flag-country-lt {
+    background-image: url(../images/icons/countries/lt.svg);
+}
+.flag-country-lu {
+    background-image: url(../images/icons/countries/lu.svg);
+}
+.flag-country-lv {
+    background-image: url(../images/icons/countries/lv.svg);
+}
+.flag-country-ly {
+    background-image: url(../images/icons/countries/ly.svg);
+}
+.flag-country-ma {
+    background-image: url(../images/icons/countries/ma.svg);
+}
+.flag-country-mc {
+    background-image: url(../images/icons/countries/mc.svg);
+}
+.flag-country-md {
+    background-image: url(../images/icons/countries/md.svg);
+}
+.flag-country-me {
+    background-image: url(../images/icons/countries/me.svg);
+}
+.flag-country-mf {
+    background-image: url(../images/icons/countries/mf.svg);
+}
+.flag-country-mg {
+    background-image: url(../images/icons/countries/mg.svg);
+}
+.flag-country-mh {
+    background-image: url(../images/icons/countries/mh.svg);
+}
+.flag-country-mk {
+    background-image: url(../images/icons/countries/mk.svg);
+}
+.flag-country-ml {
+    background-image: url(../images/icons/countries/ml.svg);
+}
+.flag-country-mm {
+    background-image: url(../images/icons/countries/mm.svg);
+}
+.flag-country-mn {
+    background-image: url(../images/icons/countries/mn.svg);
+}
+.flag-country-mo {
+    background-image: url(../images/icons/countries/mo.svg);
+}
+.flag-country-mp {
+    background-image: url(../images/icons/countries/mp.svg);
+}
+.flag-country-mq {
+    background-image: url(../images/icons/countries/mq.svg);
+}
+.flag-country-mr {
+    background-image: url(../images/icons/countries/mr.svg);
+}
+.flag-country-ms {
+    background-image: url(../images/icons/countries/ms.svg);
+}
+.flag-country-mt {
+    background-image: url(../images/icons/countries/mt.svg);
+}
+.flag-country-mu {
+    background-image: url(../images/icons/countries/mu.svg);
+}
+.flag-country-mv {
+    background-image: url(../images/icons/countries/mv.svg);
+}
+.flag-country-mw {
+    background-image: url(../images/icons/countries/mw.svg);
+}
+.flag-country-mx {
+    background-image: url(../images/icons/countries/mx.svg);
+}
+.flag-country-my {
+    background-image: url(../images/icons/countries/my.svg);
+}
+.flag-country-mz {
+    background-image: url(../images/icons/countries/mz.svg);
+}
+.flag-country-na {
+    background-image: url(../images/icons/countries/na.svg);
+}
+.flag-country-nc {
+    background-image: url(../images/icons/countries/nc.svg);
+}
+.flag-country-ne {
+    background-image: url(../images/icons/countries/ne.svg);
+}
+.flag-country-nf {
+    background-image: url(../images/icons/countries/nf.svg);
+}
+.flag-country-ng {
+    background-image: url(../images/icons/countries/ng.svg);
+}
+.flag-country-ni {
+    background-image: url(../images/icons/countries/ni.svg);
+}
+.flag-country-nl {
+    background-image: url(../images/icons/countries/nl.svg);
+}
+.flag-country-no {
+    background-image: url(../images/icons/countries/no.svg);
+}
+.flag-country-np {
+    background-image: url(../images/icons/countries/np.svg);
+}
+.flag-country-nr {
+    background-image: url(../images/icons/countries/nr.svg);
+}
+.flag-country-nu {
+    background-image: url(../images/icons/countries/nu.svg);
+}
+.flag-country-nz {
+    background-image: url(../images/icons/countries/nz.svg);
+}
+.flag-country-om {
+    background-image: url(../images/icons/countries/om.svg);
+}
+.flag-country-pa {
+    background-image: url(../images/icons/countries/pa.svg);
+}
+.flag-country-pe {
+    background-image: url(../images/icons/countries/pe.svg);
+}
+.flag-country-pf {
+    background-image: url(../images/icons/countries/pf.svg);
+}
+.flag-country-pg {
+    background-image: url(../images/icons/countries/pg.svg);
+}
+.flag-country-ph {
+    background-image: url(../images/icons/countries/ph.svg);
+}
+.flag-country-pk {
+    background-image: url(../images/icons/countries/pk.svg);
+}
+.flag-country-pl {
+    background-image: url(../images/icons/countries/pl.svg);
+}
+.flag-country-pm {
+    background-image: url(../images/icons/countries/pm.svg);
+}
+.flag-country-pn {
+    background-image: url(../images/icons/countries/pn.svg);
+}
+.flag-country-pr {
+    background-image: url(../images/icons/countries/pr.svg);
+}
+.flag-country-ps {
+    background-image: url(../images/icons/countries/ps.svg);
+}
+.flag-country-pt {
+    background-image: url(../images/icons/countries/pt.svg);
+}
+.flag-country-pw {
+    background-image: url(../images/icons/countries/pw.svg);
+}
+.flag-country-py {
+    background-image: url(../images/icons/countries/py.svg);
+}
+.flag-country-qa {
+    background-image: url(../images/icons/countries/qa.svg);
+}
+.flag-country-re {
+    background-image: url(../images/icons/countries/re.svg);
+}
+.flag-country-ro {
+    background-image: url(../images/icons/countries/ro.svg);
+}
+.flag-country-rs {
+    background-image: url(../images/icons/countries/rs.svg);
+}
+.flag-country-ru {
+    background-image: url(../images/icons/countries/ru.svg);
+}
+.flag-country-rw {
+    background-image: url(../images/icons/countries/rw.svg);
+}
+.flag-country-sa {
+    background-image: url(../images/icons/countries/sa.svg);
+}
+.flag-country-sb {
+    background-image: url(../images/icons/countries/sb.svg);
+}
+.flag-country-sc {
+    background-image: url(../images/icons/countries/sc.svg);
+}
+.flag-country-sd {
+    background-image: url(../images/icons/countries/sd.svg);
+}
+.flag-country-se {
+    background-image: url(../images/icons/countries/se.svg);
+}
+.flag-country-sg {
+    background-image: url(../images/icons/countries/sg.svg);
+}
+.flag-country-sh {
+    background-image: url(../images/icons/countries/sh.svg);
+}
+.flag-country-si {
+    background-image: url(../images/icons/countries/si.svg);
+}
+.flag-country-sj {
+    background-image: url(../images/icons/countries/sj.svg);
+}
+.flag-country-sk {
+    background-image: url(../images/icons/countries/sk.svg);
+}
+.flag-country-sl {
+    background-image: url(../images/icons/countries/sl.svg);
+}
+.flag-country-sm {
+    background-image: url(../images/icons/countries/sm.svg);
+}
+.flag-country-sn {
+    background-image: url(../images/icons/countries/sn.svg);
+}
+.flag-country-so {
+    background-image: url(../images/icons/countries/so.svg);
+}
+.flag-country-sr {
+    background-image: url(../images/icons/countries/sr.svg);
+}
+.flag-country-ss {
+    background-image: url(../images/icons/countries/ss.svg);
+}
+.flag-country-st {
+    background-image: url(../images/icons/countries/st.svg);
+}
+.flag-country-sv {
+    background-image: url(../images/icons/countries/sv.svg);
+}
+.flag-country-sx {
+    background-image: url(../images/icons/countries/sx.svg);
+}
+.flag-country-sy {
+    background-image: url(../images/icons/countries/sy.svg);
+}
+.flag-country-sz {
+    background-image: url(../images/icons/countries/sz.svg);
+}
+.flag-country-tc {
+    background-image: url(../images/icons/countries/tc.svg);
+}
+.flag-country-td {
+    background-image: url(../images/icons/countries/td.svg);
+}
+.flag-country-tf {
+    background-image: url(../images/icons/countries/tf.svg);
+}
+.flag-country-tg {
+    background-image: url(../images/icons/countries/tg.svg);
+}
+.flag-country-th {
+    background-image: url(../images/icons/countries/th.svg);
+}
+.flag-country-tj {
+    background-image: url(../images/icons/countries/tj.svg);
+}
+.flag-country-tk {
+    background-image: url(../images/icons/countries/tk.svg);
+}
+.flag-country-tl {
+    background-image: url(../images/icons/countries/tl.svg);
+}
+.flag-country-tm {
+    background-image: url(../images/icons/countries/tm.svg);
+}
+.flag-country-tn {
+    background-image: url(../images/icons/countries/tn.svg);
+}
+.flag-country-to {
+    background-image: url(../images/icons/countries/to.svg);
+}
+.flag-country-tr {
+    background-image: url(../images/icons/countries/tr.svg);
+}
+.flag-country-tt {
+    background-image: url(../images/icons/countries/tt.svg);
+}
+.flag-country-tv {
+    background-image: url(../images/icons/countries/tv.svg);
+}
+.flag-country-tw {
+    background-image: url(../images/icons/countries/tw.svg);
+}
+.flag-country-tz {
+    background-image: url(../images/icons/countries/tz.svg);
+}
+.flag-country-ua {
+    background-image: url(../images/icons/countries/ua.svg);
+}
+.flag-country-ug {
+    background-image: url(../images/icons/countries/ug.svg);
+}
+.flag-country-um {
+    background-image: url(../images/icons/countries/um.svg);
+}
+.flag-country-us {
+    background-image: url(../images/icons/countries/us.svg);
+}
+.flag-country-uy {
+    background-image: url(../images/icons/countries/uy.svg);
+}
+.flag-country-uz {
+    background-image: url(../images/icons/countries/uz.svg);
+}
+.flag-country-va {
+    background-image: url(../images/icons/countries/va.svg);
+}
+.flag-country-vc {
+    background-image: url(../images/icons/countries/vc.svg);
+}
+.flag-country-ve {
+    background-image: url(../images/icons/countries/ve.svg);
+}
+.flag-country-vg {
+    background-image: url(../images/icons/countries/vg.svg);
+}
+.flag-country-vi {
+    background-image: url(../images/icons/countries/vi.svg);
+}
+.flag-country-vn {
+    background-image: url(../images/icons/countries/vn.svg);
+}
+.flag-country-vu {
+    background-image: url(../images/icons/countries/vu.svg);
+}
+.flag-country-wf {
+    background-image: url(../images/icons/countries/wf.svg);
+}
+.flag-country-ws {
+    background-image: url(../images/icons/countries/ws.svg);
+}
+.flag-country-ye {
+    background-image: url(../images/icons/countries/ye.svg);
+}
+.flag-country-yt {
+    background-image: url(../images/icons/countries/yt.svg);
+}
+.flag-country-za {
+    background-image: url(../images/icons/countries/za.svg);
+}
+.flag-country-zm {
+    background-image: url(../images/icons/countries/zm.svg);
+}
+.flag-country-zw {
+    background-image: url(../images/icons/countries/zw.svg);
+}
+.flag-country-es-ct {
+    background-image: url(../images/icons/countries/es-ct.svg);
+}
+.flag-country-eu {
+    background-image: url(../images/icons/countries/eu.svg);
+}
+.flag-country-gb-eng {
+    background-image: url(../images/icons/countries/gb-eng.svg);
+}
+.flag-country-gb-nir {
+    background-image: url(../images/icons/countries/gb-nir.svg);
+}
+.flag-country-gb-sct {
+    background-image: url(../images/icons/countries/gb-sct.svg);
+}
+.flag-country-gb-wls {
+    background-image: url(../images/icons/countries/gb-wls.svg);
+}
+.flag-country-un {
+    background-image: url(../images/icons/countries/un.svg);
+}
+.flag-xs {
+    width: 1.25rem;
+    height: 0.9375rem;
+}
+.flag-sm {
+    width: 2rem;
+    height: 1.5rem;
+}
+.flag-md {
+    width: 3.75rem;
+    height: 2.8125rem;
+}
+.flag-lg {
+    width: 5rem;
+    height: 3.75rem;
+}
+.flag-xl {
+    width: 7rem;
+    height: 5.25rem;
+}
+.flag-2xl {
+    width: 11rem;
+    height: 8.25rem;
+}

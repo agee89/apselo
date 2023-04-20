@@ -1,0 +1,131 @@
+@extends('admin.layouts.app')
+
+@section('content')
+<div class="page-wrapper">
+    <div class="container-xl">
+        <!-- Page title -->
+        <div class="page-header d-print-none">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="page-pretitle">
+                        {{ __('Overview') }}
+                    </div>
+                    <h2 class="page-title">
+                        {{ __('Change Plan in User') }}
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-body">
+        <div class="container-xl">
+
+            {{-- Failed --}}
+            @if (Session::has("failed"))
+            <div class="alert alert-important alert-danger alert-dismissible" role="alert">
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="alert-icon icon icon-tabler icon-tabler-alert-circle"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <div>
+                        {{Session::get('failed')}}
+                    </div>
+                </div>
+                <a class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="close"></a>
+            </div>
+            @endif
+
+            {{-- Success --}}
+            @if(Session::has("success"))
+            <div class="alert alert-important alert-success alert-dismissible" role="alert">
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="alert-icon icon icon-tabler icon-tabler-check"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <div>
+                        {{Session::get('success')}}
+                    </div>
+                </div>
+                <a class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="close"></a>
+            </div>
+            @endif
+
+            <div class="row row-deck row-cards">
+                <div class="col-sm-10 col-lg-10">
+                    {{-- Change plan --}}
+                    <form action="{{ route('admin.update.user.plan') }}" method="post" class="card">
+                        @csrf
+                        <div class="card-header">
+                            <h4 class="page-title">{{ __('Change Plan') }}</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="row">
+                                        {{-- User id --}}
+                                        <input type="hidden" class="form-control" name="user_id"
+                                            placeholder="{{ __('User ID') }}" value="{{ $user_details->id }}"
+                                            readonly>
+
+                                        {{-- Plans --}}
+                                        <div class="col-md-12 col-xl-12">
+                                            <div class="mb-3">
+                                                <label class="form-label required" for="plan_id">{{ __('Plans')
+                                                    }}</label>
+                                                <select name="plan_id" id="plan_id" class="form-control" required>
+                                                    @foreach ($plans as $plan)
+                                                    <option value="{{ $plan->id }}" {{ $plan->id ==
+                                                        $user_details->plan_id ? 'selected' : '' }}>
+                                                        @if ($plan->price == '0')
+                                                        {{ __($plan->name) }} ({{ __('Free') }})
+                                                        @else
+                                                        {{ __($plan->name) }} ({{ $config[1]->config_value}} {{
+                                                        $plan->price }})
+                                                        @endif
+                                                    </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-6">
+                                        <div class="mb-3">
+                                            <button type="submit" class="btn btn-primary btn-md">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-edit" width="24" height="24"
+                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M9 7h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3">
+                                                    </path>
+                                                    <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3">
+                                                    </path>
+                                                    <line x1="16" y1="5" x2="19" y2="8"></line>
+                                                </svg>
+                                                {{ __('Change plan') }}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- Footer --}}
+    @include('admin.includes.footer')
+</div>
+@endsection
